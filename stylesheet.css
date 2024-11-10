@@ -1309,14 +1309,25 @@ audio {
         background-color: #466baf;
     }
 
+	.bg-image {
+		background-image: url('tuba1.webp');
+		background-size: 50% 100%;
+		height: 100vh;
+		animation: fadeIn 2s ease-in-out forwards; 
+	}
 
 
     /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+	@media only screen and (max-width: 600px){
+    	.bg-image {
+			background-repeat: no-repeat !important;
+			background-size: 100% 100% !important;
+		}
+
+		.cake{
+			bottom: -550px !important;
+		}
+    }
 
 	/* Container for the slider */
 .slider {

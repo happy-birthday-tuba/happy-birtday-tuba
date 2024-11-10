@@ -23,7 +23,7 @@ $('document').ready(function(){
 		$('#bulb_green').addClass('bulb-glow-green');
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
-		$('body').addClass('peach');
+		$('body').addClass('bg-image');
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
@@ -52,35 +52,35 @@ $('document').ready(function(){
 	});
 
 	function loopOne() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b1').animate({left:randleft,bottom:randtop},10000,function(){
 			loopOne();
 		});
 	}
 	function loopTwo() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b2').animate({left:randleft,bottom:randtop},10000,function(){
 			loopTwo();
 		});
 	}
 	function loopThree() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b3').animate({left:randleft,bottom:randtop},10000,function(){
 			loopThree();
 		});
 	}
 	function loopFour() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b4').animate({left:randleft,bottom:randtop},10000,function(){
 			loopFour();
 		});
 	}
 	function loopFive() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b5').animate({left:randleft,bottom:randtop},10000,function(){
 			loopFive();
@@ -88,14 +88,14 @@ $('document').ready(function(){
 	}
 
 	function loopSix() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b6').animate({left:randleft,bottom:randtop},10000,function(){
 			loopSix();
 		});
 	}
 	function loopSeven() {
-		var randleft = 1000*Math.random();
+		var randleft = 500*Math.random();
 		var randtop = 500*Math.random();
 		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
 			loopSeven();
@@ -119,14 +119,14 @@ $('document').ready(function(){
 		loopSix();
 		loopSeven();
 		
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(1000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
 		});
 	});	
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(10000).promise().done(function(){
+		$(this).fadeOut('slow').delay(1000).promise().done(function(){
 			$('#light_candle').fadeIn('slow');
 		});
 	});
@@ -175,7 +175,7 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(100).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(3000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
